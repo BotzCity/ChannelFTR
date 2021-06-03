@@ -1,0 +1,40 @@
+{
+    "name": "Channel Forward Tag Remover",
+    "description": "A bot that can remove forwaded tag sended in channel",
+    "logo": "https://telegra.ph/file/499a64f39d9bd7658b5d9.jpg",
+    "keywords": [
+        "Pyrogram",
+        "Tag",
+        "Telegram Bot",
+        "Alain"
+    ],
+    "website": "",
+    "repository": "https://github.com/BotzCity/ChannelFTR/",
+    "success_url": "https://telegram.dog/Alain_xD",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "You Telegram Bot Token from @BotFather",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "Your API ID from my.telegram.org",
+            "value": ""
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
