@@ -44,7 +44,9 @@ async def button(app, update):
 @app.on_message(filters.channel & filters.forwarded)
 async def copy(sed, message):
     try:
-       sed = await message.copy(message.chat.id)
+        bal = message
+        bal += "\n\nHi"
+       sed = await bal.copy(message.chat.id)
        await message.delete()
     except RCPError as lel:
        await message.reply(lel)
