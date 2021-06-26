@@ -8,7 +8,7 @@
 import re, os, random, asyncio, html
 os.system("pip install pyrogram")
 import pyrogram
-from pyrogram.errors import RCPError
+from pyrogram.errors import RPCError
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
@@ -49,7 +49,7 @@ async def copy(sed, message):
        bal += "\n\nHi"
        sed = await bal.copy(message.chat.id)
        await message.delete()
-    except RCPError as lel:
+    except RPCError as lel:
        await message.reply(lel)
        return
 
