@@ -8,6 +8,7 @@
 import re, os, random, asyncio, html
 os.system("pip install pyrogram")
 import pyrogram
+from pyrogram.errors import RCPError
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
