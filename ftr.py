@@ -47,9 +47,7 @@ async def copy(sed, message):
     try:
        
        sed = await message.copy(message.chat.id)
-       fk = sed
-       fk += "Hi"
-       await fk.copy(message.chat.id)
+       
        await message.delete()
     except RPCError as lel:
        await message.reply(lel)
